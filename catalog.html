@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Страница каталога</title>
+    <link rel="stylesheet" href="css/reset.css">
   </head>
   <body>
     <header class="main-header">
@@ -47,8 +48,34 @@
         <span>Средства для ухода</span>
       </div>
       <div class="catalog-content">
-        <section class="filter">
-
+        <section class="catalog-filter">
+          <form name="filter-box" action="#" method="post">
+            <div class="catalog-filter__block">
+              <h2>Производители:</h2>
+              <input name="baxter" id="baxter-id" type="checkbox">
+              <label for="baxter-id">Baxter of California</label>
+              <input name="mr-natty" id="mr-natty-id" type="checkbox">
+              <label for="mr-natty-id">Mr Natty</label>
+              <input name="suavecito" id="suavecito-id" type="checkbox">
+              <label for="suavecito-id">Suavecito</label>
+              <input name="malin" id="malin-id" type="checkbox">
+              <label for="malin-id">Malin+Goetz</label>
+              <input name="murray" id="murray-id" type="checkbox">
+              <label for="murray-id">Murray’s</label>
+              <input name="american-crew" id="american-crew-id" type="checkbox">
+              <label for="american-crew-id">American Crew</label>
+            </div>
+            <div class="catalog-filter__block">
+              <h2>Группы товаров:</h2>
+              <label for="shaving-id">Бритвенные принадлежности</label>
+              <input type="radio" name="product-group" value="shaving" id="shaving-id">
+              <label for="care-id">Средства для ухода</label>
+              <input type="radio" name="product-group" value="care" id="care-id">
+              <label for="accessories-id">Аксессуары</label>
+              <input type="radio" name="product-group" value="accessories" id="accessories-id">
+              <button type="submit" class="btn">Показать</button>
+            </div>
+          </form>
         </section>
 
         <section class="catalog-items">
@@ -70,7 +97,7 @@
           </article>
           <article class="catalog-item">
             <img src="http://placehold.it/220x165" alt="Гель для волос" width="220" height="165">
-            <div class="catalog-item__title">Гель для волос <span>«SUAVECITO»</span></div>
+            <div class="catalog-item__title">Гель для волос <span>«Suavetico»</span></div>
             <div class="catalog-item__price">
               <div class="price">290 <span>Руб.</span></div>
               <div class="btn buy"><a href="#">Купить</a></div>
@@ -86,7 +113,7 @@
           </article>
           <article class="catalog-item">
             <img src="http://placehold.it/220x165" alt="Гель для волос" width="220" height="165">
-            <div class="catalog-item__title">Гель для волос <span>«AMERICAN CREW»</span></div>
+            <div class="catalog-item__title">Гель для волос <span>«American Crew»</span></div>
             <div class="catalog-item__price">
               <div class="price">300 <span>Руб.</span></div>
               <div class="btn buy"><a href="#">Купить</a></div>
